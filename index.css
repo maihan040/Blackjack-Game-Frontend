@@ -1,0 +1,192 @@
+/* =========================
+   Global Theme
+   ========================= */
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #004400, #002200 80%);
+  font-family: 'Poppins', 'Trebuchet MS', sans-serif;
+  color: #f8f9fa;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Casino table glow */
+body::before {
+  content: '';
+  position: fixed;
+  inset: -10%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(
+    circle at 50% 40%,
+    rgba(0, 180, 0, 0.2),
+    transparent 70%
+  );
+  z-index: -1;
+}
+
+/* =========================
+   Header Section
+   ========================= */
+#heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: goldenrod;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: 8px;
+  margin: 0 5px;
+}
+
+.suites span,
+.suites inline {
+  font-size: 34px;
+}
+
+/* =========================
+   Message and Stats
+   ========================= */
+.top-el {
+  margin-top: 30px;
+  color: #ffecb3;
+  font-size: 22px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+#message-el {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   Cards and Game Layout
+   ========================= */
+.game-btns,
+#participant-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  gap: 0px;
+}
+
+#cards-el,
+#sum-el,
+#dealer-cards-el {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 25px;
+  border-radius: 12px;
+  margin-top: 5px;
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+/* =========================
+   Buttons — General Style
+   ========================= */
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+  width: 175px;
+  margin: 8px 0;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+/* Core blackjack button theme */
+.blackjack-button {
+  background: linear-gradient(145deg, #222, #000);
+  color: #f8f9fa;
+  border: 2px solid #daa520;
+  border-radius: 10px;
+  padding: 14px 30px;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.blackjack-button:hover {
+  background: linear-gradient(145deg, #333, #111);
+  color: #ffeaa7;
+  border-color: #ffcc00;
+  transform: scale(1.07);
+  box-shadow: 0 6px 14px rgba(255, 215, 0, 0.25);
+}
+
+.blackjack-button:active {
+  background: #111;
+  transform: scale(0.96);
+}
+
+/* =========================
+   Betting Buttons
+   ========================= */
+.bet-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+  background: rgba(0, 50, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #004d00;
+  width: fit-content;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.bet-buttons button {
+  background: radial-gradient(circle at top, #006400, #003300 90%);
+  border: 2px solid gold;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #ffeaa7;
+  padding: 10px 24px;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.bet-buttons button:hover {
+  background: radial-gradient(circle at top, #008000, #004400);
+  transform: translateY(-3px);
+  color: #fffacd;
+}
+
+/* =========================
+   Player Info
+   ========================= */
+.bottom-el {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #f7d794;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* =========================
+   Miscellaneous Polishing
+   ========================= */
+#current-bet-el {
+  color: #f9ca24;
+}
+
+/* =========================
+   Commented/Unused Code
+   ========================= */
+/* .hidden { display: none !important; } */
+/* #player-stats, #dealer-stats { ... } */
+/* .participant-stats { ... } */
+/* .stats-box { ... } */
+/* .stats-box p { ... } */
+/* #dealer-cards-el, #dealer-sum-el { ... } */

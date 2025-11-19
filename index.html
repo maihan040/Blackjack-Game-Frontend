@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header id="heading">
+      <h1 class="suites">
+        <span style="color: black">&hearts;</span>
+        <span style="color: red">&spades;</span>
+        <span style="color: black">&diams;</span>
+        <span style="color: red">&clubs;</span>
+      </h1>
+      <h1>Blackjack</h1>
+      <h1 class="suites">
+        <span style="color: red">&clubs;</span>
+        <span style="color: black">&diams;</span>
+        <span style="color: red">&spades;</span>
+        <span style="color: black">&hearts;</span>
+      </h1>
+    </header>
+
+    <main id="main-el">
+      <p id="message-el" class="top-el">Want to play a round?</p>
+
+      <section id="participant-stats">
+        <div id="player-stats" hidden>
+          <p id="player"></p>
+          <p id="cards-el"></p>
+          <p id="sum-el"></p>
+        </div>
+
+        <div id="dealer-stats" hidden>
+          <p id="dealer"></p>
+          <p id="dealer-cards-el"></p>
+        </div>
+      </section>
+
+      <section class="game-btns" hidden>
+        <button id="new-round-btn" class="blackjack-button">NEW ROUND</button>
+        <button id="new-card-btn" class="blackjack-button" hidden>HIT</button>
+        <button id="stand-btn" class="blackjack-button" hidden>STAND</button>
+        <button id="quit-btn" class="blackjack-button" hidden>QUIT</button>
+
+        <div class="bet-buttons" hidden>
+          <button data-bet="5">$5</button>
+          <button data-bet="10">$10</button>
+          <button data-bet="20">$20</button>
+          <button data-bet="50">$50</button>
+          <button data-bet="100">$100</button>
+        </div>
+
+        <div class="bottom-el">
+          <p id="player-el"></p>
+          <p id="current-bet-el"></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- <script type="module" src="./javascript/main.js"></script> -->
+    <script type="module" src="./javascript/main.js"></script>
+  </body>
+</html>
