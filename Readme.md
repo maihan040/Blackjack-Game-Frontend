@@ -53,10 +53,10 @@ blackjack-game/
 ├── index.html
 ├── style.css
 ├── javascript/
-│   ├── dealer.js/    
-│   └── deck.sj/  
-|   └── gameState.sj/  
-|   └── main.sj/  
-|   └── player.sj/  
-|   └── ui.sj/  
+│   ├── dealer.js
+│   ├── deck.js
+│   ├── gameState.js
+│   ├── main.js
+│   ├── player.js
+│   └── ui.js
 └── README.md
