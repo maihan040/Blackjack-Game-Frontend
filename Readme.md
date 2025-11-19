@@ -48,6 +48,7 @@ Git + GitHub for version control
 Browser dev tools for debugging
 
 
+```
 blackjack-game/
 │
 ├── index.html
@@ -60,3 +61,4 @@ blackjack-game/
 │   ├── player.js
 │   └── ui.js
 └── README.md
+```
